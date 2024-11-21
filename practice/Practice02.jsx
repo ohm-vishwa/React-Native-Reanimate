@@ -1,3 +1,7 @@
+// interpolate
+// interpolateColor
+// square ==> Circle
+
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
 import {View, Text, TouchableOpacity} from 'react-native';
@@ -7,12 +11,13 @@ import Animated, {
   interpolateColor,
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
+  withTiming,
 } from 'react-native-reanimated';
 
 const Practice02 = () => {
   const animation = useSharedValue(0);
   const [clicked, setClicked] = useState(false);
+
   const animatedStyle = useAnimatedStyle(() => {
     const width = interpolate(animation.value, [0, 1], [100, 200]);
     const radius = interpolate(animation.value, [0, 1], [0, 100]);
@@ -32,7 +37,6 @@ const Practice02 = () => {
     <View
       style={{
         flex: 1,
-        backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
       }}>
@@ -55,9 +59,9 @@ const Practice02 = () => {
         }}
         onPress={() => {
           if (clicked) {
-            animation.value = withSpring(1);
+            animation.value = withTiming(1, {duration: 1000});
           } else {
-            animation.value = withSpring(0);
+            animation.value = withTiming(0, {duration: 1000});
           }
           setClicked(!clicked);
         }}>

@@ -1,3 +1,5 @@
+// Basic withSpring
+
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
 import {View, Text, TouchableOpacity} from 'react-native';
@@ -24,7 +26,6 @@ const Practice01 = () => {
     <View
       style={{
         flex: 1,
-        backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
       }}>
