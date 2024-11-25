@@ -11,3 +11,5 @@
 6 [Swipe animation like gmail](./practice/Practice06.jsx)
 
 7 [Slide Animation](./practice/Practice07.jsx)
+
+8 [Day night togle button animated style](./practice/Practice08.jsx)
