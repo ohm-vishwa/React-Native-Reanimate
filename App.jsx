@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import {View} from 'react-native';
 import React from 'react';
-import Practice05 from './practice/Practice05';
+import Practice07 from './practice/Practice07';
 
 const App = () => {
   return (
     <View style={{flex: 1, backgroundColor: 'white'}}>
-      <Practice05 />
+      <Practice07 />
     </View>
   );
 };

@@ -1,7 +1,9 @@
+/* eslint-disable eqeqeq */
+// Animated Search bar
+
 /* eslint-disable react-native/no-inline-styles */
 import {View, TextInput, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
-import {hp, wp} from '../common/helper';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Animated, {
   useAnimatedStyle,

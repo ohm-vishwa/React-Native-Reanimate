@@ -7,3 +7,7 @@
 4 [instagram double tap like](./practice/Practice04.jsx)
 
 5 [animated search bar](./practice/Practice05.jsx)
+
+6 [Swipe animation like gmail](./practice/Practice06.jsx)
+
+7 [Slide Animation](./practice/Practice07.jsx)
